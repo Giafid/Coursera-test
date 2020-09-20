@@ -32,7 +32,7 @@ section {
 	color: white;
 }
 
-p {
+h5 {
 	border: 1px solid black;
 	border-top-width: 0px;
 	border-right-width: 0px; 
@@ -45,16 +45,16 @@ p {
 	font-weight: bold;
 }
 
-p#chicken {
+h5#chicken {
 	background-color: pink;
 	color: black;
 }
 
-p#beef {
+h5#beef {
 	background-color: darkred;
 }
 
-p#sushi {
+h5#sushi {
 	background-color: salmon;
 	color: black;
 }
