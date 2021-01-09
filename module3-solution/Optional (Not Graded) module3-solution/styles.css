@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(18, 14, 31);
+}
+
+/** HEADER **/
+
+  header {
+    margin-bottom: 70px;
+  }
+
+  div#brand.navbar-brand {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  div#brand.navbar-brand h1 {
+    color: black;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+  }
+
+  div.navbar-brand a:hover {
+    text-decoration: none;
+  }
+
+  ul#nav-list li.nav-item {
+    font-size: 1.5em;
+  }
+
+  ul#nav-list li.nav-item span {
+    margin-bottom: 0;
+  }
+
+/* END HEADER */
+
+
+/* MAIN CONTENT */
+
+  h2#menu-title {
+    color:blanchedalmond;
+    font-size: 1.85em;
+    margin: -50px auto 50px;
+  }
+
+  section.category {
+    margin: 0px 10px 50px;
+    padding-bottom: 10px;
+    background-color: rgba(167, 49, 49, 0.685);
+    border: 1px solid black;
+  }
+
+  section.category > h3.category-title {
+    font-size: 1.3em;
+    margin: 0 -15px;
+    border-bottom: 1px solid black;
+    padding: 10px 0px 10px;
+    background-color: darkgray;
+  }
+
+  section#beef.category > h3.category-title {
+    color: white;
+    background-color: rgb(196, 3, 6);
+  }
+
+  section#chicken.category > h3.category-title {
+    color: black;
+    background-color: rgb(248, 190, 170);
+  }
+
+  section#sushi.category > h3.category-title {
+    color: black;
+    background-color: salmon;
+  }
+
+  div#main-content section.category > div.category-description {
+    color: white;
+    text-align: justify;
+    text-indent: 4%;
+    padding: 15px 10px 5px;
+  }
+
+  div#main-content section.category > div.category-description > p {
+    margin-bottom: 0;
+  }
+
+  button#back-to-top-button {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 999999;
+    width: 107px ;
+    border-radius: 15px;
+    opacity: 70%;
+    transition: width, height, 0.5s;
+  }
+
+  button#back-to-top-button:hover {
+    opacity: 100%;
+    width: 120px;
+    height: 36px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-size: 115%;
+  }
+
+  button#back-to-top-button span#button-text {
+    display: inline;
+    margin: 0;
+  }
+
+/* END MAIN CONTENT */
+
+
+/* FOOTER */
+
+/* END FOOTER */
+
+
+/***** MEDIA QUERIES *****/
+
+
+/********** Medium and Large devices **********/
+@media (min-width: 992px) {
+
+/* MAIN CONTENT  */
+
+  section.category {
+    margin: 0px 15px 50px;
+    width: 30%;
+    padding-bottom: 10px;
+    background-color: rgba(167, 49, 49, 0.685);
+    border: 1px solid black;
+  }
+
+/* END MAIN CONTENT  */
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+/* MAIN CONTENT  */
+
+  section#beef, section#chicken {
+    margin: 0px 10px 30px;;
+    width: 47.25%;
+  }
+
+  section#sushi {
+    width: 97.5%;
+  }
+
+/* END MAIN CONTENT  */
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+/* HEADER */
+
+ul#nav-list > hr {
+  border-color: rgba(211, 211, 211, 0.561);
+  padding: 0;
+  margin: 0;
+}
+
+/* END HEADER */
+
+/* MAIN CONTENT */
+
+  section.category {
+    margin: 0px 10% 50px;
+  }
+
+  button#back-to-top-button {
+    position: fixed;
+    bottom: 2.5%;
+    right: 1.5%;
+    z-index: 999999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 150%;
+    opacity: 100%;
+    text-align: center;
+  }
+
+  button#back-to-top-button:hover, button#back-to-top-button:active {
+    width: 50px;
+    height: 50px;
+    opacity: 100%;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    font-size: 150%;
+    text-align: center;
+  }
+
+  button#back-to-top-button span#button-text {
+    display: none;
+    margin: 0;
+  }
+
+
+/* END MAIN CONTENT */
+
+}
